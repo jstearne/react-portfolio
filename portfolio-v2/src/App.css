@@ -4,13 +4,13 @@
 /* All web app settings */
 .App {
   text-align: center;
-  background-color: red; /* can replace with background image */
+  /* background-image: "https://imgur.com/7pcbPQj.jpg"; can replace with background image */
 }
 
-/* headers (using google fonts) */
-h1 {
+
+h1 { /* headers (using google fonts) */
   font-family: 'Audiowide', cursive;
-  font-size: 8vmin;
+  font-size: 8vmin; /* 8vmin is 8% of the viewport size */
 }
 h2 {
   font-family: 'Permanent Marker', cursive;
