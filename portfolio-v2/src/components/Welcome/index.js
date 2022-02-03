@@ -15,13 +15,14 @@ function Welcome(props) { /* props is passed from App.js and is an all-in-one ar
             <p>Blurb about me, {props.name}!</p>
             {/* font awesome requires react icons! READ: https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react */}
             <p>Links FA brand [linkedin] {props.icon} [github], FA Solid [envelope] [file-pdf] ...can be moved to NavBar later!</p>
-            <div><i className="fa fa-spinner fa-spin">no spinner but why</i></div>
-                <div>
+                <div>{/* to display text on hover, have to wrap in indiv divs - low priority */}
                     <FontAwesomeIcon className="icons" icon={faGithubSquare} size="lg" />
                     <FontAwesomeIcon className="icons" icon={faLinkedin} size="lg" />
                     <FontAwesomeIcon className="icons" icon={faEnvelope} size="lg" />
                     <FontAwesomeIcon className="icons" icon={faFilePdf} size="lg" />
                 </div>
+                <div class="myDIV">Hover over me.</div>
+                <div class="hide">I am shown when someone hovers over the div above.</div>
         </div>
     );
 }

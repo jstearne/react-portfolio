@@ -4,6 +4,7 @@
 /* All web app settings */
 .App {
   text-align: center;
+  
   /* background-image: "https://imgur.com/7pcbPQj.jpg"; can replace with background image */
 }
 
@@ -35,9 +36,18 @@ span { /* "in paradise" text effect */
   margin: 20px;
 }
 .icons:hover {
-  outline: 5px solid red;
+  cursor: pointer;
 }
 
+.hide {
+  display: none;
+}
+
+.myDIV:hover + .hide {
+  display: block;
+  color: red;
+  background-color: none;
+}
 
 
 /* STANDARD REACT STYLES */
