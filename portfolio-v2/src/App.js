@@ -1,19 +1,27 @@
 import logo from './logo.svg';
-import background from "./img/background.jpg"; /* custom background image */
-import './App.css';
+import background from "./img/background.jpg"; /* custom background image in src/img/ */
+import './App.css'; /* import CSS app.css */
+import Welcome from './components/Welcome';
 
-// how to input background color here? I think this is correct (styles) but overwritten by standard CSS.
+// function-based components to refactor into Hooks if needed
 function App() {
   return (
-    <div className="App" style={{ backgroundImage:`url(${background})`, height:'auto', width:'auto', backgroundRepeat:'no-repeat', backgroundAttachment:'fixed', backgroundPosition:'center', }}  >
-      <header className="App-header"> {/* this is setting css for App */}
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <h1>Test the new font...</h1>
-        <h2 className="alternate-font">in Paradise!</h2>
+    <div className="App" style={{ backgroundImage:`url(${background})`, backgroundRepeat:'no-repeat', backgroundAttachment:'fixed', backgroundPosition:'center', }}  >
+    {/* attachment fixed prevents image scroll */}
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" /> {/* this looks amazing in app! */}
 
+        <h1>A lovely day <span className="alternate-font"> in Paradise </span></h1>
+        
+        {/* Welcome Component at top of page */}
+        <Welcome name={'Jared Stearne'} />
+
+        {/* Project Components as needed */}
+
+
+        {/* Credential Components as needed */}
+
+        {/* link example, can delete */}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -22,6 +30,8 @@ function App() {
         >
           Learn React and make a portfolio!
         </a>
+         {/* scroll test */}
+        <br/><br/><br/><br/><br/><br/>Sup?<br/><br/><br/><br/><br/><br/>Sup!
       </header>
     </div>
   );

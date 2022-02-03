@@ -11,14 +11,27 @@
 h1 { /* headers (using google fonts) */
   font-family: 'Audiowide', cursive;
   font-size: 8vmin; /* 8vmin is 8% of the viewport size */
+  color: skyblue; /* pretty damn striking if I do say so myself */
+  text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
 }
-h2 {
+span { /* "in paradise" text effect */
   font-family: 'Permanent Marker', cursive;
   font-size: 8vmin;
+  text-shadow: 1px 1px 25px #f00; /* graffitti effect */
 }
 
+/* Component Styling */
+.Welcome-Component {
+  background-color: green; /* just to see it clearly */
+}
+.Project-Component {
+  background-color: green; /* just to see it clearly */
+}
+
+
+/* STANDARD REACT STYLES */
 .App-logo {
-  height: 40vmin;
+  height: 10vmin;
   pointer-events: none;
 }
 
@@ -29,7 +42,6 @@ h2 {
 }
 
 .App-header {
-/* Will overwrite .App class because it's a level lower! */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -40,7 +52,7 @@ h2 {
 }
 
 .App-link {
-  color: #61dafb;
+  color: #61dafb; /* react blue, but mine is a bit more faded and worn looking, not as vibrant. better? */
 }
 
 @keyframes App-logo-spin {
