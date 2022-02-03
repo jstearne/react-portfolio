@@ -1,15 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
 
-// how to input background color here? I think this is correct but overwritten by standard CSS.
+// how to input background color here? I think this is correct (styles) but overwritten by standard CSS.
 function App() {
   return (
     <div className="App" styles={{ backgroundColor:`red` }} >
-      <header className="App-header">
+      <header className="App-header"> {/* this is setting css for App */}
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
+        <h1>Test the new font...</h1>
+        <h2 className="alternate-font">in Paradise!</h2>
+
         <a
           className="App-link"
           href="https://reactjs.org"

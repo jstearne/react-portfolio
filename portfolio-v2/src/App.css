@@ -1,6 +1,20 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&display=swap');
+
+/* All web app settings */
 .App {
   text-align: center;
-  
+  background-color: red; /* can replace with background image */
+}
+
+/* headers (using google fonts) */
+h1 {
+  font-family: 'Audiowide', cursive;
+  font-size: 8vmin;
+}
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 8vmin;
 }
 
 .App-logo {
@@ -15,7 +29,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+/* Will overwrite .App class because it's a level lower! */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
