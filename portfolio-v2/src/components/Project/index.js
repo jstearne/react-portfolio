@@ -4,9 +4,9 @@ import React from 'react';
 function Project(props) { /* props is passed from App.js and is an all-in-one arg */
     return(
         <div className="Project-Component">
-            <h1>Project Name</h1>
-            <p>This name prop is being passed from App.js > Welcome/index.js: {props.name}</p>
-            <p> </p>
+            <h1>Project Name: {props.projectName}</h1>
+            <p>Technologies Used: {props.technologies}</p>
+            <p>Project Blurb: {props.blurb}</p>
 
         </div>
     );

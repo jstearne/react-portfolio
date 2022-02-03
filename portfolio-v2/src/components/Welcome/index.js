@@ -1,13 +1,27 @@
 import React from 'react';
 /* Still links to app.css! No need for a separate import */
 
+// get our fontawesome imports
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
+import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'; /* FA brand import */
+import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons"; /* FA solid import */
+
+
+
 function Welcome(props) { /* props is passed from App.js and is an all-in-one arg */
     return(
         <div className="Welcome-Component">
             <h1>Portfolio Title!</h1>
             <p>Blurb about me, {props.name}!</p>
-            <p>Links to Linkedin, Git, Email, can be moved to NavBar later!</p>
-
+            {/* font awesome requires react icons! READ: https://fontawesome.com/v5.15/how-to-use/on-the-web/using-with/react */}
+            <p>Links FA brand [linkedin] {props.icon} [github], FA Solid [envelope] [file-pdf] ...can be moved to NavBar later!</p>
+            <div><i className="fa fa-spinner fa-spin">no spinner but why</i></div>
+                <div>
+                    <FontAwesomeIcon className="icons" icon={faGithubSquare} size="lg" />
+                    <FontAwesomeIcon className="icons" icon={faLinkedin} size="lg" />
+                    <FontAwesomeIcon className="icons" icon={faEnvelope} size="lg" />
+                    <FontAwesomeIcon className="icons" icon={faFilePdf} size="lg" />
+                </div>
         </div>
     );
 }

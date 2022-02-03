@@ -29,6 +29,17 @@ span { /* "in paradise" text effect */
 }
 
 
+
+/* Font Awesome icon buttons styling */
+.icons {
+  margin: 20px;
+}
+.icons:hover {
+  outline: 5px solid red;
+}
+
+
+
 /* STANDARD REACT STYLES */
 .App-logo {
   height: 10vmin;

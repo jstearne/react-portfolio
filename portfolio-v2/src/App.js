@@ -3,6 +3,7 @@ import background from "./img/background.jpg"; /* custom background image in src
 import './App.css'; /* import CSS app.css */
 import Welcome from './components/Welcome';
 
+
 // function-based components to refactor into Hooks if needed
 function App() {
   return (
@@ -13,8 +14,10 @@ function App() {
 
         <h1>A lovely day <span className="alternate-font"> in Paradise </span></h1>
         
+
+
         {/* Welcome Component at top of page */}
-        <Welcome name={'Jared Stearne'} />
+        <Welcome name={'Jared Stearne'}  />
 
         {/* Project Components as needed */}
 
