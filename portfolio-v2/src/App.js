@@ -4,6 +4,10 @@ import './App.css'; /* import CSS app.css */
 import Welcome from './components/Welcome';
 import Project from './components/Project';
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
+import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons"; /* FA solid import */
+
+
 // function-based components to refactor into Hooks if needed
 function App() {
   return (
@@ -15,12 +19,27 @@ function App() {
         {/* Welcome Component at top of page */}
         <Welcome name={'Jared'}  />
 
-        {/* Project Components as needed */}
-        <Project />
+        {/* Pulsing down arrow to let users know to keep scrolling */}
+        <FontAwesomeIcon className="down-arrow" icon={faAngleDoubleDown} size="lg" />
+        
+        {/* Project Components as needed: Wedding v2, v1, fidget, wayfarer, portfolio v1, v2 */}
+        <Project 
+        
+        projectName={"MC Gusto"}
+        technologies={ 
+        // List all of the devicon logos for a specific project here!
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+          
+          
+        }
+        blurb={"This was a great project andd I enjoyed it!"}
+
+         />
         <Project />
         <Project />
 
         {/* Credential Components as needed */}
+
 
         {/* link example, can delete
         <a

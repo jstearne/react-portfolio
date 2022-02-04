@@ -1,15 +1,28 @@
 import React from 'react';
-/* Still links to app.css! No need for a separate import */
+// Still links to app.css! No need for a separate import
+
+// temporary solution: to github jstearne page
+function toGitHub(props) { 
+//   const gitHubLink = props.gitLink; 
+//   console.log(gitHubLink) // props always undefined. Use DOM to grab local button?
+  window.open(
+    `https://github.com/jstearne`, "_blank"); 
+    // `https://github.com/jstearne/${gitHubLink}`, "_blank"); 
+}
 
 function Project(props) { /* props is passed from App.js and is an all-in-one arg */
     return(
         <div className="Project-Component">
-            <h1>Project Name: {props.projectName}</h1>
-            <p>Technologies Used: {props.technologies}</p>
-            <p>Project Blurb: {props.blurb}</p>
-
+            <div className="nested-div">
+                <h2 style={{ textDecorationLine: 'overline' }} >{props.projectName}</h2>
+                <p>Tech: {props.technologies} [Icon] [Icon] [Icon] [Icon] </p>
+                <p>Project Blurb: {props.blurb}</p>
+                
+                {/* need buttons for visiting the live site, git, and seeing image? */}
+                <button className="github-button" onClick={toGitHub}>See GitHub</button>
+            </div>
         </div>
     );
 }
-/* Must contain: Header/Title, Technical Skills List, About Me Blurb (nav bar component?) */
+
 export default Project;

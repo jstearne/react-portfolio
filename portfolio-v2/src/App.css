@@ -17,19 +17,70 @@ span { /* "in paradise" text effect */
   font-size: 8vmin;
   text-shadow: 1px 1px 25px #f00; /* graffitti effect */
 }
+h2 { /* headers (using google fonts) */
+  font-family: 'Audiowide', cursive;
+  color: skyblue; /* pretty damn striking if I do say so myself */
+  text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
+}
 h6 {
   margin-top: -10px;
 }
 /* Component Styling */
 .Welcome-Component {
   /* complete */
+  margin-bottom: 20vh; /* space before the projects start showing up, want to show unobstructed image w/ DOWN arrow */
 }
+
+
+/* entice user to scroll down! Eye-catching Fontawesome down-arrow pulse animation */
+.down-arrow {
+  margin-top: 10vh;
+	transform: scale(1.5);
+	animation: pulse 1s infinite;
+}
+@keyframes pulse {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.25);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+
 .Project-Component {
-  background-color: green; /* just to see it clearly */
+  margin-top: 20vh; /* needs tweaking? */
+  background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.7));
+  align-self: flex-end;
+  text-align: left;
+  width: 80vw;
+  border-radius: 25px 0 0 25px;
+  padding: 3vh;
+  /* how to position a thumbnail image? Big enough to see? Maybe a click button instead? */
 }
+.nested-div { /* nested "faux-component" to create a border */
 
 
+  background-image: linear-gradient(to left, rgba(255,255,0,0), rgba(255,100,0,0.5));
 
+  text-align: left;
+  width: 70vw;
+  border-radius: 25px 0 0 25px;
+  padding: 5vh;
+  /* how to position a thumbnail image? Big enough to see? Maybe a click button instead? */
+}
+/* project component buttons */
+.github-button {
+  border-radius: 50px;
+  color: skyblue;
+  background-color: rgb(15,15,15,.5);
+}
+.github-button:hover {
+  cursor: pointer;
+}
 
 
 /* Font Awesome and Dev icon buttons styling - Welcome Component Only */
