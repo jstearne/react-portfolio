@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import background from "./img/background.jpg"; /* custom background image in src/img/ */
 import './App.css'; /* import CSS app.css */
 import Welcome from './components/Welcome';
-
+import Project from './components/Project';
 
 // function-based components to refactor into Hooks if needed
 function App() {
@@ -12,19 +12,17 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" /> {/* this looks amazing in app! */}
 
-        <h1>A lovely day <span className="alternate-font"> in Paradise </span></h1>
-        
-
-
         {/* Welcome Component at top of page */}
-        <Welcome name={'Jared Stearne'}  />
+        <Welcome name={'Jared'}  />
 
         {/* Project Components as needed */}
-
+        <Project />
+        <Project />
+        <Project />
 
         {/* Credential Components as needed */}
 
-        {/* link example, can delete */}
+        {/* link example, can delete
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -33,7 +31,9 @@ function App() {
         >
           Learn React and make a portfolio!
         </a>
+         */}
          {/* scroll test */}
+        <br/><br/><br/><br/><br/><br/>Sup?<br/><br/><br/><br/><br/><br/>Sup!
         <br/><br/><br/><br/><br/><br/>Sup?<br/><br/><br/><br/><br/><br/>Sup!
       </header>
     </div>

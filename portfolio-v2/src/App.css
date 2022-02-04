@@ -4,14 +4,11 @@
 /* All web app settings */
 .App {
   text-align: center;
-  
-  /* background-image: "https://imgur.com/7pcbPQj.jpg"; can replace with background image */
 }
 
 
 h1 { /* headers (using google fonts) */
   font-family: 'Audiowide', cursive;
-  font-size: 8vmin; /* 8vmin is 8% of the viewport size */
   color: skyblue; /* pretty damn striking if I do say so myself */
   text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
 }
@@ -20,10 +17,12 @@ span { /* "in paradise" text effect */
   font-size: 8vmin;
   text-shadow: 1px 1px 25px #f00; /* graffitti effect */
 }
-
+h6 {
+  margin-top: -10px;
+}
 /* Component Styling */
 .Welcome-Component {
-  background-color: green; /* just to see it clearly */
+  /* complete */
 }
 .Project-Component {
   background-color: green; /* just to see it clearly */
@@ -31,24 +30,31 @@ span { /* "in paradise" text effect */
 
 
 
-/* Font Awesome icon buttons styling */
+
+
+/* Font Awesome and Dev icon buttons styling - Welcome Component Only */
 .icons {
   margin: 20px;
 }
 .icons:hover {
   cursor: pointer;
+  filter: drop-shadow(0 0 0.75rem #f00); /* red halo on hover */
+  transform: scale(1.4);
 }
-
-.hide {
-  display: none;
+.icon-wrap {
+  /* for button group */
 }
-
-.myDIV:hover + .hide {
-  display: block;
-  color: red;
-  background-color: none;
+img {
+  /* https://devicon.dev/ tech svg icons, responsive! */
+  height: 3.5%;
+  width: 3.5%;
+  margin-left: 1vw;
+  color: white;
+  max-width: 10vw;
 }
-
+aside {
+  /* text indicator for Welcome links? */
+}
 
 /* STANDARD REACT STYLES */
 .App-logo {
