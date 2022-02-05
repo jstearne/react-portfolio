@@ -1,12 +1,11 @@
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Permanent+Marker&display=swap');
 
-/* All web app settings */
 .App {
   text-align: center;
 }
 
-
+/* FONT STYLING */
 h1 { /* headers (using google fonts) */
   font-family: 'Audiowide', cursive;
   color: skyblue; /* pretty damn striking if I do say so myself */
@@ -31,14 +30,8 @@ h6 {
 p {
   cursor: default;
 }
-/* Component Styling */
-.Welcome-Component {
-  /* complete */
-  margin-bottom: 20vh; /* space before the projects start showing up, want to show unobstructed image w/ DOWN arrow */
-}
 
-
-/* entice user to scroll down! Eye-catching Fontawesome down-arrow pulse animation */
+/* SCROLL ARROW */
 .down-arrow {
   margin-top: 10vh;
 	transform: scale(1.5);
@@ -56,46 +49,57 @@ p {
 	}
 }
 
-
+/* COMPONENT STYLING */
+.Welcome-Component {
+  margin-bottom: 20vh; /* space before the projects start showing up, want to show unobstructed image w/ DOWN arrow */
+}
+/* PROJECT COMPONENT STYLING */
 .Project-Component {
-  margin-top: 20vh; /* needs tweaking? */
+  margin-top: 15vh; /* needs tweaking? */
   background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.7));
   align-self: flex-end;
   text-align: left;
   width: 80vw;
   border-radius: 25px 0 0 25px;
   padding: 3vh;
-  /* how to position a thumbnail image? Big enough to see? Maybe a click button instead? */
 }
 .Project-Component:hover{
-  /* Makes components slide out and darken subtly on hover. Good for poor eyes? */
+  /* Makes components slide left and darken subtly on hover. Good for poor eyes? */
   transform:translateX(-5%); 
-  background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(0,0,0,0.7));
+  background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(195,195,195,0.7));
 }
-.nested-div { /* nested "faux-component" to create a border */
+.project-nested-div { /* nested "faux-component" to create a custom border */
   background-image: linear-gradient(to left, rgba(255,255,0,0), rgba(255,100,0,0.5));
   text-align: left;
   width: 70vw;
   border-radius: 25px 0 0 25px;
   padding: 5vh;
-  /* how to position a thumbnail image? Big enough to see? Maybe a click button instead? */
 }
-
-
 /* project component buttons */
 .github-button {
-  border-radius: 50px;
+  border-radius: 10px;
+  padding: 5px;
   color: skyblue;
   background-color: rgb(15,15,15,.5);
   font-family: 'Audiowide', cursive;
+  background-image: linear-gradient(to top, rgba(255,255,255,0), rgba(195,195,195,0.7));
+  border: none;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 }
 .github-button:hover {
   cursor: pointer;
   transform: scale(1.2);
+  color: orangered;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 }
+/* CREDENTIAL COMPONENT STYLING */
 
 
-/* Font Awesome and Dev icon buttons styling - Welcome Component Only */
+
+/* NAVBAR COMPONENT STYLING: Coming Soon */
+
+
+/* Font Awesome and Dev icon buttons styling - Welcome Component Only for now */
 .icons {
   margin: 2vw;
 }
@@ -119,6 +123,7 @@ aside {
   /* text indicator for Welcome links? */
 }
 
+
 /* STANDARD REACT STYLES */
 .App-logo {
   height: 5vmin;
@@ -130,7 +135,6 @@ aside {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   min-height: 100vh;
   display: flex;
@@ -140,11 +144,9 @@ aside {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb; /* react blue, but mine is a bit more faded and worn looking, not as vibrant. better? */
 }
-
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

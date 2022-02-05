@@ -13,7 +13,7 @@ function toGitHub(props) {
 function Project(props) { /* props is passed from App.js and is an all-in-one arg */
     return(
         <div className="Project-Component">
-            <div className="nested-div">
+            <div className="project-nested-div">
                 <h2 style={{ textDecorationLine: 'overline' }} >{props.projectName}</h2>
 
                 <p>Project Blurb: {props.blurb}</p>
