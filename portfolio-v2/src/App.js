@@ -35,14 +35,14 @@ function App() {
          />
 
         <Project 
-        projectName={"Wayfarer"}
-        blurb={"A Python Django powered website allowing users to create new posts and interact with each other via comments. This was a fun opportunity to participate in the full software development cycle via client and scrum meetings."}
-        
-        tech1={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="python-logo" /> }
-        tech2={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql-logo"/> }
-        tech3={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" alt="django-logo"/> }
-        tech4={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5-logo"/> }
-        tech5={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3-logo"/> }
+          projectName={"Wayfarer"}
+          blurb={"A Python Django powered website allowing users to create new posts and interact with each other via comments. This was a fun opportunity to participate in the full software development cycle via client and scrum meetings."}
+          
+          tech1={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="python-logo" /> }
+          tech2={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql-logo"/> }
+          tech3={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" alt="django-logo"/> }
+          tech4={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5-logo"/> }
+          tech5={ <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3-logo"/> }
         />
 
         <Project 

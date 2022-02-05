@@ -21,10 +21,10 @@ function Credential(props) { /* props is passed from App.js and is an all-in-one
             <div className="credential-nested-div">
                 <h2 style={{ textDecorationLine: 'overline' }} >{props.credentialtype}</h2>
 
-                <h3>School/Job: {props.org1}</h3>
+                <h3>{props.org1}</h3>
                 <p>{props.blurb1}</p>
 
-                <h3>School/Job: {props.org2}</h3>
+                <h3>{props.org2}</h3>
                 <p>{props.blurb2}</p>
 
                 {/* need buttons for visiting the live site, git, and seeing image? */}
