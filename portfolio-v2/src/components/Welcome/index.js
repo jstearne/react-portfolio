@@ -14,7 +14,7 @@ function Welcome(props) { /* props is passed from App.js and is an all-in-one ar
     
             <h6><code> [ My name's {props.name}, and I'm a full-stack engineer looking for an opportunity! ] </code></h6>
             
-            {/* SEE TOOLTIPS CSS - need to add them here in v2.0 */}
+            {/* SEE TOOLTIPS CSS - need to add them here in v2.0. Can I display alt-text? */}
             {/* Technology Icons: Javascript */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript-logo" />
             {/* Python */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="python-logo" />
             {/* React */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react-logo"/>

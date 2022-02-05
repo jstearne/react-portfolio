@@ -7,7 +7,6 @@ import Project from './components/Project';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons"; /* FA solid import */
 
-
 // function-based components to refactor into Hooks if needed
 function App() {
   return (
@@ -24,22 +23,24 @@ function App() {
         
         {/* Project Components as needed: Wedding v2, v1, fidget, wayfarer, portfolio v1, v2 */}
         <Project 
-        
-        projectName={"MC Gusto"}
-        technologies={ 
-        // List all of the devicon logos for a specific project here!
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
-          
-          
-        }
-        blurb={"This was a great project andd I enjoyed it!"}
+          projectName={"My Wedding App"}
+          blurb={"This was a great project and I enjoyed it! Built it and it works perfectly. Give it a visit."}
 
+          tech1={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg" alt="python-logo" />  }
+          tech2={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql-logo"/>  }
+          tech3={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" alt="django-logo"/>  }
+          tech4={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg" alt="html5-logo"/>  }
+          tech5={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3-logo"/>  }
          />
+
         <Project />
+
+        <Project />
+
         <Project />
 
         {/* Credential Components as needed */}
-
+        
 
         {/* link example, can delete
         <a

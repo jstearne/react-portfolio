@@ -15,11 +15,11 @@ function Project(props) { /* props is passed from App.js and is an all-in-one ar
         <div className="Project-Component">
             <div className="nested-div">
                 <h2 style={{ textDecorationLine: 'overline' }} >{props.projectName}</h2>
-                <p>Tech: {props.technologies} [Icon] [Icon] [Icon] [Icon] </p>
+
                 <p>Project Blurb: {props.blurb}</p>
-                
+                <p>{props.tech1} {props.tech2} {props.tech3} {props.tech4} {props.tech5} </p>
                 {/* need buttons for visiting the live site, git, and seeing image? */}
-                <button className="github-button" onClick={toGitHub}>See GitHub</button>
+                <button className="github-button" onClick={toGitHub}>&nbsp;to GitHub&nbsp;</button>
             </div>
         </div>
     );

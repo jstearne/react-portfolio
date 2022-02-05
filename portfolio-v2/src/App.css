@@ -11,6 +11,7 @@ h1 { /* headers (using google fonts) */
   font-family: 'Audiowide', cursive;
   color: skyblue; /* pretty damn striking if I do say so myself */
   text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
+  cursor: default;
 }
 span { /* "in paradise" text effect */
   font-family: 'Permanent Marker', cursive;
@@ -21,9 +22,14 @@ h2 { /* headers (using google fonts) */
   font-family: 'Audiowide', cursive;
   color: skyblue; /* pretty damn striking if I do say so myself */
   text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
+  cursor: default;
 }
 h6 {
   margin-top: -10px;
+  cursor: default;
+}
+p {
+  cursor: default;
 }
 /* Component Styling */
 .Welcome-Component {
@@ -61,31 +67,37 @@ h6 {
   padding: 3vh;
   /* how to position a thumbnail image? Big enough to see? Maybe a click button instead? */
 }
+.Project-Component:hover{
+  /* Makes components slide out and darken subtly on hover. Good for poor eyes? */
+  transform:translateX(-5%); 
+  background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(0,0,0,0.7));
+}
 .nested-div { /* nested "faux-component" to create a border */
-
-
   background-image: linear-gradient(to left, rgba(255,255,0,0), rgba(255,100,0,0.5));
-
   text-align: left;
   width: 70vw;
   border-radius: 25px 0 0 25px;
   padding: 5vh;
   /* how to position a thumbnail image? Big enough to see? Maybe a click button instead? */
 }
+
+
 /* project component buttons */
 .github-button {
   border-radius: 50px;
   color: skyblue;
   background-color: rgb(15,15,15,.5);
+  font-family: 'Audiowide', cursive;
 }
 .github-button:hover {
   cursor: pointer;
+  transform: scale(1.2);
 }
 
 
 /* Font Awesome and Dev icon buttons styling - Welcome Component Only */
 .icons {
-  margin: 20px;
+  margin: 2vw;
 }
 .icons:hover {
   cursor: pointer;
@@ -100,8 +112,8 @@ img {
   height: 3.5%;
   width: 3.5%;
   margin-left: 1vw;
-  color: white;
   max-width: 10vw;
+  cursor: help; /* tooltip needs to hit these img tags! */
 }
 aside {
   /* text indicator for Welcome links? */
@@ -109,7 +121,7 @@ aside {
 
 /* STANDARD REACT STYLES */
 .App-logo {
-  height: 10vmin;
+  height: 5vmin;
   pointer-events: none;
 }
 
