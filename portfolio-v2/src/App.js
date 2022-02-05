@@ -3,6 +3,7 @@ import background from "./img/background.jpg"; /* custom background image in src
 import './App.css'; /* import CSS app.css */
 import Welcome from './components/Welcome';
 import Project from './components/Project';
+import Credential from './components/Credential';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons"; /* FA solid import */
@@ -37,10 +38,25 @@ function App() {
 
         <Project />
 
-        <Project />
+        <Project 
+          projectName={"Portfolio Site"}
+          blurb={"A React-JS single-page website with extensive custom CSS. This portfolio replaces my initial effort, a Python/Django website with a Bootstrap frontend."}
+
+          tech1={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" alt="react-logo"/>  }
+          tech2={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="javascript-logo" />  }
+          tech3={<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3-logo"/>    }
+        />
 
         {/* Credential Components as needed */}
-        
+        <Credential 
+          credentialtype={""}
+          org1={""}
+          blurb1={""}
+          
+          org2={""}
+          blurb2={""}
+
+        />
 
         {/* link example, can delete
         <a
@@ -52,9 +68,6 @@ function App() {
           Learn React and make a portfolio!
         </a>
          */}
-         {/* scroll test */}
-        <br/><br/><br/><br/><br/><br/>Sup?<br/><br/><br/><br/><br/><br/>Sup!
-        <br/><br/><br/><br/><br/><br/>Sup?<br/><br/><br/><br/><br/><br/>Sup!
       </header>
     </div>
   );

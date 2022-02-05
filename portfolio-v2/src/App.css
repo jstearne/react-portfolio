@@ -65,20 +65,73 @@ p {
 }
 .Project-Component:hover{
   /* Makes components slide left and darken subtly on hover. Good for poor eyes? */
-  transform:translateX(-5%); 
   background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(195,195,195,0.7));
+  position: relative;
+  animation: project-move 0.7s; /* how fast the component "pops" out on-hover */
+  animation-timing-function: ease-in-out; /* ease, ease-out, ease-in, ease-in-out, linear */
+}
+@keyframes project-move {
+	0% {
+		left: 0px;
+	}
+	50% {
+		left: -2vw;
+	}
+	100% {
+		left: 0px;
+	}
 }
 .project-nested-div { /* nested "faux-component" to create a custom border */
   background-image: linear-gradient(to left, rgba(255,255,0,0), rgba(255,100,0,0.5));
-  text-align: left;
   width: 70vw;
   border-radius: 25px 0 0 25px;
   padding: 5vh;
 }
-/* project component buttons */
-.github-button {
+
+/* CREDENTIAL COMPONENT STYLING */
+.Credential-Component {
+  margin-top: 15vh; /* needs tweaking? */
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.7));
+  align-self: start;
+  width: 80vw;
+  border-radius: 0px 25px 25px 0px;
+  padding: 3vh;
+}
+.Credential-Component:hover{
+  /* Makes components slide left and darken subtly on hover. Good for poor eyes? */
+  background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(195,195,195,0.7));
+  position: relative;
+  animation: credential-move 0.7s;
+  animation-timing-function: ease-in-out;
+}
+@keyframes credential-move {
+	0% {
+		left: 0px;
+	}
+	50% {
+		left: 2vw;
+	}
+	100% {
+		left: 0px;
+	}
+}
+
+
+.credential-nested-div { /* nested "faux-component" to create a custom border */
+  background-image: linear-gradient(to right, rgba(255,255,0,0), rgba(255,100,0,0.5));
+  text-align: right;
+  width: 70vw;
+  border-radius: 0 25px 25px 0;
+  padding: 5vw;
+}
+
+/* NAVBAR COMPONENT STYLING: Coming Soon */
+
+/* Component buttons */
+.github-button, .email-button, .linkedin-button, .resume-button {
   border-radius: 10px;
   padding: 5px;
+  margin: 10px;
   color: skyblue;
   background-color: rgb(15,15,15,.5);
   font-family: 'Audiowide', cursive;
@@ -86,18 +139,12 @@ p {
   border: none;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 }
-.github-button:hover {
+.github-button:hover, .email-button:hover, .linkedin-button:hover, .resume-button:hover {
   cursor: pointer;
   transform: scale(1.2);
   color: orangered;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 }
-/* CREDENTIAL COMPONENT STYLING */
-
-
-
-/* NAVBAR COMPONENT STYLING: Coming Soon */
-
 
 /* Font Awesome and Dev icon buttons styling - Welcome Component Only for now */
 .icons {
