@@ -10,8 +10,7 @@ import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons"; /* FA
 function Welcome(props) { /* props is passed from App.js and is an all-in-one arg */
     return(
         <div className="Welcome-Component">
-            <h1>A lovely day <span className="alternate-font"> in Paradise </span></h1>
-    
+            <h1>A lovely day <span className="alternate-font"> in Paradise</span></h1> 
             <h6><code> [ My name's {props.name}, and I'm a full-stack engineer looking for an opportunity! ] </code></h6>
             
             {/* SEE TOOLTIPS CSS - need to add them here in v2.0. Can I display alt-text? */}

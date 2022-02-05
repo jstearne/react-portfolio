@@ -4,11 +4,11 @@ import React from 'react';
 // temporary solution: to github jstearne page
 function showResume(props) { 
   window.open(
-    `https://github.com/jstearne`, "_blank"); 
+    `https://drive.google.com/file/d/1tkm7dcR3CVtYQ4TTJuqCLwFZ0za7xUwY/view?usp=sharing`, "_blank"); 
 }
 function toLinkedIn(props) { 
   window.open(
-    `https://github.com/jstearne`, "_blank"); 
+    `https://www.linkedin.com/in/jared-stearne/`, "_blank"); 
 }
 function emailMe() { 
   window.open(
@@ -19,15 +19,14 @@ function Credential(props) { /* props is passed from App.js and is an all-in-one
     return(
         <div className="Credential-Component">
             <div className="credential-nested-div">
-                <h2 style={{ textDecorationLine: 'overline' }} >Credentials: {props.credentialtype}</h2>
+                <h2 style={{ textDecorationLine: 'overline' }} >{props.credentialtype}</h2>
 
-                <p>School/Job: {props.org1}</p>
+                <h3>School/Job: {props.org1}</h3>
                 <p>{props.blurb1}</p>
 
-                <p>School/Job: {props.org2}</p>
+                <h3>School/Job: {props.org2}</h3>
                 <p>{props.blurb2}</p>
 
-                <p>See resume for more details</p>
                 {/* need buttons for visiting the live site, git, and seeing image? */}
                 <button className="resume-button" onClick={showResume}>&nbsp;resume&nbsp;</button>
                 <button className="linkedin-button" onClick={toLinkedIn}>&nbsp;to linkedin&nbsp;</button>

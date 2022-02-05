@@ -23,12 +23,19 @@ h2 { /* headers (using google fonts) */
   text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
   cursor: default;
 }
+/* styling for credential headers */
+h3 {
+  margin-top: vh;
+  text-shadow: 1px 1px 5px #000; /* Can't decide between shadow or no shadow */
+}
+/* about me headline (main subtitle) */
 h6 {
   margin-top: -10px;
   cursor: default;
 }
 p {
   cursor: default;
+  
 }
 
 /* SCROLL ARROW */
@@ -51,11 +58,11 @@ p {
 
 /* COMPONENT STYLING */
 .Welcome-Component {
-  margin-bottom: 20vh; /* space before the projects start showing up, want to show unobstructed image w/ DOWN arrow */
+  margin-bottom: 22vh; /* space before the projects start showing up, want to show unobstructed image w/ DOWN arrow */
 }
 /* PROJECT COMPONENT STYLING */
 .Project-Component {
-  margin-top: 15vh; /* needs tweaking? */
+  margin-top: 10vh; /* needs tweaking? */
   background-image: linear-gradient(to left, rgba(255,255,255,0), rgba(255,255,255,0.7));
   align-self: flex-end;
   text-align: left;
@@ -90,12 +97,13 @@ p {
 
 /* CREDENTIAL COMPONENT STYLING */
 .Credential-Component {
-  margin-top: 15vh; /* needs tweaking? */
+  margin-top: 10vh; /* needs tweaking? */
   background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,0.7));
   align-self: start;
   width: 80vw;
   border-radius: 0px 25px 25px 0px;
   padding: 3vh;
+  white-space: pre-line;
 }
 .Credential-Component:hover{
   /* Makes components slide left and darken subtly on hover. Good for poor eyes? */
@@ -115,8 +123,6 @@ p {
 		left: 0px;
 	}
 }
-
-
 .credential-nested-div { /* nested "faux-component" to create a custom border */
   background-image: linear-gradient(to right, rgba(255,255,0,0), rgba(255,100,0,0.5));
   text-align: right;
@@ -126,6 +132,15 @@ p {
 }
 
 /* NAVBAR COMPONENT STYLING: Coming Soon */
+
+
+
+footer {
+  background-color: black;
+  width: 100%;
+  margin-top: 5vh;
+  padding-top: 5vh;
+}
 
 /* Component buttons */
 .github-button, .email-button, .linkedin-button, .resume-button {
@@ -179,7 +194,7 @@ aside {
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: App-logo-spin infinite 3s linear;
   }
 }
 .App-header {
@@ -189,7 +204,7 @@ aside {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: white; /* default font for entire site */
 }
 .App-link {
   color: #61dafb; /* react blue, but mine is a bit more faded and worn looking, not as vibrant. better? */
