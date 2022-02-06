@@ -1,11 +1,6 @@
 import React from 'react';
 import NavBar from '../../components/NavBar';
 
-// get our fontawesome imports
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
-import { faGithubSquare, faLinkedin } from '@fortawesome/free-brands-svg-icons'; /* FA brand import */
-import { faEnvelope, faFilePdf } from "@fortawesome/free-solid-svg-icons"; /* FA solid import */
-
 
 function Welcome(props) { /* props is passed from App.js and is an all-in-one arg */
     return(
@@ -26,7 +21,6 @@ function Welcome(props) { /* props is passed from App.js and is an all-in-one ar
             {/* CSS */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg" alt="css3-logo"/>
             {/* Github */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="github-logo"/>
             {/* Heroku */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" alt="heroku-logo"/>
-
             <NavBar />
         </div>
     );

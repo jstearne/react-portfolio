@@ -93,7 +93,7 @@ function App() {
         />
         
         {/* smooth scroll to top */}
-        <button className="scroll-button" onClick={toTop}>&nbsp;^ to top ^ &nbsp;</button>
+        <button className="scroll-button" onClick={toTop}>&nbsp; return to top &nbsp;</button>
 
         <footer>
           <NavBar tagline={"2022 - Jared Stearne"} />
