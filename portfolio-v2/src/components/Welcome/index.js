@@ -1,5 +1,5 @@
 import React from 'react';
-/* Still links to app.css! No need for a separate import */
+import NavBar from '../../components/NavBar';
 
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
@@ -27,12 +27,7 @@ function Welcome(props) { /* props is passed from App.js and is an all-in-one ar
             {/* Github */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" alt="github-logo"/>
             {/* Heroku */} <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" alt="heroku-logo"/>
 
-            <div className="icon-wrap">
-                <FontAwesomeIcon className="icons" icon={faGithubSquare} size="lg" />
-                <FontAwesomeIcon className="icons" icon={faLinkedin} size="lg" />
-                <FontAwesomeIcon className="icons" icon={faEnvelope} size="lg" />
-                <FontAwesomeIcon className="icons" icon={faFilePdf} size="lg" />
-            </div>
+            <NavBar />
         </div>
     );
 }

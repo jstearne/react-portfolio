@@ -4,11 +4,17 @@ import './App.css'; /* import CSS app.css */
 import Welcome from './components/Welcome';
 import Project from './components/Project';
 import Credential from './components/Credential';
+import NavBar from './components/NavBar';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"; /* Font Awesome icons */
 import { faAngleDoubleDown } from "@fortawesome/free-solid-svg-icons"; /* FA solid import */
 
-// function-based components to refactor into Hooks if needed
+// scroll to top button
+function toTop() { 
+  window.scrollTo({top: 0, behavior: 'smooth'});
+}
+
+
 function App() {
   return (
     <div className="App" style={{ backgroundImage:`url(${background})`, backgroundRepeat:'no-repeat', backgroundAttachment:'fixed', backgroundPosition:'center', }}  >
@@ -17,8 +23,9 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" /> {/* this looks amazing in app! */}
 
         {/* Welcome Component at top of page */}
-        <Welcome name={'Jared'}  />
-        
+        <Welcome name={'Jared'} />
+
+
         {/* Pulsing down arrow to let users know to keep scrolling */}
         <FontAwesomeIcon className="down-arrow" icon={faAngleDoubleDown} size="lg" />
         
@@ -84,21 +91,12 @@ function App() {
           org2={"Automatic Data Processing, Major Accounts"}
           blurb2={`Responsible for new business development. Services consisted of cloud-based workforce technology and consulting services.`}
         />
-
-        {/* link example, can delete
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React and make a portfolio!
-        </a>
-         */}
+        
+        {/* smooth scroll to top */}
+        <button className="scroll-button" onClick={toTop}>&nbsp;^ to top ^ &nbsp;</button>
 
         <footer>
-          2022 HEY! This is a footer. This should include NavBar as well, which will hold link icons.
-        {/* NavBar here, should show up on right half of footer, only */}
+          <NavBar tagline={"2022 - Jared Stearne"} />
         </footer>
 
       </header>

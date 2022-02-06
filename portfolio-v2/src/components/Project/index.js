@@ -5,6 +5,8 @@ import React from 'react';
 function toGitHub(props) { 
 //   const gitHubLink = props.gitLink; 
 //   console.log(gitHubLink) // props always undefined. Use DOM to grab local button?
+
+// could use conditional code here to get the right git repo
   window.open(
     `https://github.com/jstearne`, "_blank"); 
     // `https://github.com/jstearne/${gitHubLink}`, "_blank"); 

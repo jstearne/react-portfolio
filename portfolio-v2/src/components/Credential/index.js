@@ -2,11 +2,11 @@ import React from 'react';
 // Still links to app.css! No need for a separate import
 
 // temporary solution: to github jstearne page
-function showResume(props) { 
+function showResume() { 
   window.open(
     `https://drive.google.com/file/d/1tkm7dcR3CVtYQ4TTJuqCLwFZ0za7xUwY/view?usp=sharing`, "_blank"); 
 }
-function toLinkedIn(props) { 
+function toLinkedIn() { 
   window.open(
     `https://www.linkedin.com/in/jared-stearne/`, "_blank"); 
 }

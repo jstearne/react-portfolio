@@ -90,9 +90,10 @@ p {
 }
 .project-nested-div { /* nested "faux-component" to create a custom border */
   background-image: linear-gradient(to left, rgba(255,255,0,0), rgba(255,100,0,0.5));
-  width: 70vw;
+  width: 60vw;
   border-radius: 25px 0 0 25px;
   padding: 5vh;
+
 }
 
 /* CREDENTIAL COMPONENT STYLING */
@@ -126,24 +127,28 @@ p {
 .credential-nested-div { /* nested "faux-component" to create a custom border */
   background-image: linear-gradient(to right, rgba(255,255,0,0), rgba(255,100,0,0.5));
   text-align: right;
-  width: 70vw;
+  width: 70vw; /* asymetrical looking overlap adds some style to it */
   border-radius: 0 25px 25px 0;
   padding: 5vw;
 }
 
 /* NAVBAR COMPONENT STYLING: Coming Soon */
 
-
-
+.tagline {
+  display: inline;
+}
 footer {
   background-color: black;
   width: 100%;
   margin-top: 5vh;
   padding-top: 5vh;
+  outline: 2px solid white;
+  display: inline;
 }
 
 /* Component buttons */
-.github-button, .email-button, .linkedin-button, .resume-button {
+.github-button, .email-button, .linkedin-button, .resume-button, .scroll-button {
+  cursor: pointer;
   border-radius: 10px;
   padding: 5px;
   margin: 10px;
@@ -154,13 +159,24 @@ footer {
   border: none;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 }
+.scroll-button {
+  margin: 10vh;
+  padding: 2vh;
+  padding-right: 5vw;
+  padding-left: 5vw;
+}
 .github-button:hover, .email-button:hover, .linkedin-button:hover, .resume-button:hover {
   cursor: pointer;
   transform: scale(1.2);
   color: orangered;
   box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
 }
-
+.scroll-button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  color: orangered;
+  box-shadow: 0 10px 10px 0 rgba(0,0,0,0.1), 0 10px 10px 0 rgba(0,0,0,0.1);
+}
 /* Font Awesome and Dev icon buttons styling - Welcome Component Only for now */
 .icons {
   margin: 2vw;
