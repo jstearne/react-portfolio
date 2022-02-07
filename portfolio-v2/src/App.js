@@ -22,8 +22,8 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" /> {/* this looks amazing in app! */}
 
-        {/* Welcome Component at top of page */}
-        <Welcome name={'Jared'} />
+        {/* Welcome Component at top of page, selfie in tooltip? */}
+        <Welcome name={'Jared'} /> 
 
 
         {/* Pulsing down arrow to let users know to keep scrolling */}

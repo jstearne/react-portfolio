@@ -9,9 +9,4 @@ npm start launces on PORT:3000
 # Next version
 Icon tooltips for the hard-to-read icons that people may not recognize
 
-Scroll-to-top react button (requires hooks): https://www.geeksforgeeks.org/how-to-create-a-scroll-to-top-button-in-react-js/
-
-Having trouble using Props to insert link specifics in template literals. Use props to send "wedding-capstone-project" to Project Component so it can add those words to the end of the button link in function toGitHub(). Right now, the prop contents are always undefined for some reason...
-
-Can solve this using React Conditionals (among other solutions): https://reactjs.org/docs/conditional-rendering.html
-
+Need to write function or use react conditionals to provide specific git repo links
