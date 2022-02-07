@@ -1,12 +1,3 @@
-# react-portfolio
-An updated portfolio in React
+Moved to v2-portfolio due to folder issue. See here:
 
-npm start launces on PORT:3000
-
-
-
-
-# Next version
-Icon tooltips for the hard-to-read icons that people may not recognize
-
-Need to write function or use react conditionals to provide specific git repo links
+# https://github.com/jstearne/v2-portfolio
